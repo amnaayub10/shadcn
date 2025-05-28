@@ -143,7 +143,7 @@ Target attendees (size, demographics)
             <div className="flex items-center gap-4">
               <Checkbox id="item1" checked />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Post-Event Follow-Up: Send thank-you notes to attendees and vendors, gather feedback, and evaluate the event's success.
+                Post-Event Follow-Up: Send thank-you notes to attendees and vendors, gather feedback, and evaluate the events success.
               </label>
             </div>
           </Card>
