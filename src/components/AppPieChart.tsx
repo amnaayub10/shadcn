@@ -10,23 +10,24 @@ import {
 import { TrendingUp } from "lucide-react";
 
 const chartConfig = {
-  visitors: {
-    label: "Visitors",
+OutdoorWeddings: {
+    label: "Outdoor weddings",
+    color: "var(--chart-6)"
   },
-  chrome: {
-    label: "Chrome",
+  MusicFestival: {
+    label: "Music Festival",
     color: "var(--chart-1)",
   },
-  safari: {
-    label: "Safari",
+  cinema: {
+    label: "Open-Air Cinema",
     color: "var(--chart-2)",
   },
-  firefox: {
-    label: "Firefox",
+  CorporatePicnic: {
+    label: "Corporate Picnic",
     color: "var(--chart-3)",
   },
-  edge: {
-    label: "Edge",
+  Charity: {
+    label: "Charity Fun Run/Walk",
     color: "var(--chart-4)",
   },
   other: {
@@ -36,10 +37,10 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 const chartData = [
-  { browser: "chrome", visitors: 275, fill: "var(--color-chrome)" },
-  { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
-  { browser: "firefox", visitors: 287, fill: "var(--color-firefox)" },
-  { browser: "edge", visitors: 173, fill: "var(--color-edge)" },
+  { browser: "OutdoorWeddings", visitors: 275, fill: "var(--color-OutdoorWeddings)" },
+  { browser: "MusicFestival", visitors: 200, fill: "var(--color-MusicFestival)" },
+  { browser: "cinema", visitors: 287, fill: "var(--color-cinema)" },
+  { browser: "Charity", visitors: 173, fill: "var(--color-Charity)" },
   { browser: "other", visitors: 190, fill: "var(--color-other)" },
 ];
 
@@ -50,7 +51,7 @@ const AppPieChart = () => {
   
   return (
     <div className="">
-      <h1 className="text-lg font-medium mb-6">Browser Usage</h1>
+      <h1 className="text-lg font-medium mb-6">Events Booked</h1>
       <ChartContainer
         config={chartConfig}
         className="mx-auto aspect-square max-h-[250px]"

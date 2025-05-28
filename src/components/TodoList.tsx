@@ -15,12 +15,12 @@ const TodoList = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="">
-      <h1 className="text-lg font-medium mb-6">Todo List</h1>
+      <h1 className="text-lg font-medium mb-6">Event Planning Master Checklist</h1>
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
           <Button className="w-full">
             <CalendarIcon />
-            {date ? format(date, "PPP") : <span>Pick a date</span>}
+            {date ? format(date, "PPP") : <span>Choose a event date</span>}
           </Button>
         </PopoverTrigger>
         <PopoverContent className="p-0 w-auto">
@@ -42,7 +42,9 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" checked />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Define Purpose & Audience: Goal (e.g., networking, fundraising), 
+
+Target attendees (size, demographics)
               </label>
             </div>
           </Card>
@@ -51,7 +53,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" checked />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Set Budget: Allocate funds for venue, food, marketing, etc.
               </label>
             </div>
           </Card>
@@ -60,7 +62,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Book Venue: Choose location, check availability, and book in advance.
               </label>
             </div>
           </Card>
@@ -69,7 +71,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Pick Date & Timeline: Choose date, create a timeline for planning tasks.
               </label>
             </div>
           </Card>
@@ -78,7 +80,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Hire Vendors: Research and hire caterers, AV teams, decorators, etc.
               </label>
             </div>
           </Card>
@@ -87,7 +89,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+               Promote Event: Create a marketing plan, use social media, email, and other channels to reach your audience. 
               </label>
             </div>
           </Card>
@@ -96,7 +98,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Manage RSVPs: Set up a system to track RSVPs, send reminders, and manage guest lists.
               </label>
             </div>
           </Card>
@@ -105,7 +107,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Finalize Schedule: Create a detailed schedule for the event, including setup, activities, and breakdown.
               </label>
             </div>
           </Card>
@@ -114,7 +116,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" checked />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Prepare Supplies: Gather all necessary materials, equipment, and supplies needed for the event.
               </label>
             </div>
           </Card>
@@ -123,7 +125,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" checked />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Day-of Setup: Arrive early to set up the venue, coordinate with vendors, and ensure everything is in place.
               </label>
             </div>
           </Card>
@@ -132,7 +134,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" checked />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Execute Event: Oversee the event, manage any issues that arise, and ensure everything runs smoothly.
               </label>
             </div>
           </Card>
@@ -141,7 +143,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" checked />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Post-Event Follow-Up: Send thank-you notes to attendees and vendors, gather feedback, and evaluate the event's success.
               </label>
             </div>
           </Card>
@@ -150,7 +152,7 @@ const TodoList = () => {
             <div className="flex items-center gap-4">
               <Checkbox id="item1" checked />
               <label htmlFor="item1" className="text-sm text-muted-foreground">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Review & Improve: Analyze what worked well and what could be improved for future events.
               </label>
             </div>
           </Card>

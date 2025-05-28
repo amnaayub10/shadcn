@@ -4,21 +4,21 @@ import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts";
 import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "./ui/chart";
 
 const chartData = [
-  { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 305, mobile: 200 },
-  { month: "March", desktop: 237, mobile: 120 },
-  { month: "April", desktop: 73, mobile: 190 },
-  { month: "May", desktop: 209, mobile: 130 },
-  { month: "June", desktop: 214, mobile: 140 },
+  { month: "January", Indoor: 186, Outdoor: 80 },
+  { month: "February", Indoor: 305, Outdoor: 200 },
+  { month: "March", Indoor: 237, Outdoor: 120 },
+  { month: "April", Indoor: 73, Outdoor: 190 },
+  { month: "May", Indoor: 209, Outdoor: 130 },
+  { month: "June", Indoor: 214, Outdoor: 140 },
 ];
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
+  Indoor: {
+    label: "Indoor",
     color: "var(--chart-1)",
   },
-  mobile: {
-    label: "Mobile",
-    color: "var(--chart-2)",
+  Outdoor: {
+    label: "Outdoor",
+    color: "var(--chart-5)",
   },
 } satisfies ChartConfig;
 
@@ -48,16 +48,16 @@ const AppLineChart = () => {
         />
         <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
         <Line
-          dataKey="desktop"
+          dataKey="Indoor"
           type="monotone"
-          stroke="var(--color-desktop)"
+          stroke="var(--color-Indoor)"
           strokeWidth={2}
           dot={false}
         />
         <Line
-          dataKey="mobile"
+          dataKey="Outdoor"
           type="monotone"
-          stroke="var(--color-mobile)"
+          stroke="var(--color-Outdoor)"
           strokeWidth={2}
           dot={false}
         />

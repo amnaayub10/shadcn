@@ -3,29 +3,29 @@ import { ChartContainer, ChartLegend, ChartLegendContent, ChartTooltip, ChartToo
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
-    color: "var(--chart-1)",
-  },
-  mobile: {
-    label: "Mobile",
+  Indoor: {
+    label: "Indoor",
     color: "var(--chart-4)",
+  },
+  Outdoor: {
+    label: "Outdoor",
+    color: "var(--chart-2)",
   },
 } satisfies ChartConfig;
 
 const chartData = [
-  { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 305, mobile: 200 },
-  { month: "March", desktop: 237, mobile: 120 },
-  { month: "April", desktop: 73, mobile: 190 },
-  { month: "May", desktop: 209, mobile: 130 },
-  { month: "June", desktop: 214, mobile: 140 },
+  { month: "January",   Indoor: 186, Outdoor: 80 },
+  { month: "February", Indoor: 305, Outdoor: 200 },
+  { month: "March", Indoor: 237, Outdoor: 120 },
+  { month: "April", Indoor: 73, Outdoor: 190 },
+  { month: "May", Indoor: 209, Outdoor: 130 },
+  { month: "June", Indoor: 214, Outdoor: 140 },
 ];
 
 const AppBarChart = () => {
   return (
     <div className="">
-      <h1 className="text-lg font-medium mb-6">Total Revenue</h1>
+      <h1 className="text-lg font-medium mb-6">Total Events</h1>
       <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
         <BarChart accessibilityLayer data={chartData}>
           <CartesianGrid vertical={false} />
@@ -43,8 +43,8 @@ const AppBarChart = () => {
           />
           <ChartTooltip content={<ChartTooltipContent />} />
           <ChartLegend content={<ChartLegendContent />} />
-          <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
-          <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
+          <Bar dataKey="Indoor" fill="var(--color-Indoor)" radius={4} />
+          <Bar dataKey="Outdoor" fill="var(--color-Outdoor)" radius={4} />
         </BarChart>
       </ChartContainer>
     </div>

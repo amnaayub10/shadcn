@@ -52,16 +52,16 @@ const Navbar = () => {
         <DropdownMenu>
           <DropdownMenuTrigger>
             <Avatar>
-              <AvatarImage src="https://avatars.githubusercontent.com/u/1486366" />
+              <AvatarImage src="https://images.pexels.com/photos/32261581/pexels-photo-32261581/free-photo-of-portrait-of-a-smiling-woman-in-a-hijab.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </DropdownMenuTrigger>
           <DropdownMenuContent sideOffset={10}>
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuLabel>Its Me</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
               <User className="h-[1.2rem] w-[1.2rem] mr-2" />
-              Profile
+              Profiles
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Settings className="h-[1.2rem] w-[1.2rem] mr-2" />

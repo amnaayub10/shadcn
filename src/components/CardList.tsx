@@ -2,89 +2,89 @@ import Image from "next/image";
 import { Card, CardContent, CardFooter, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 
-const popularContent = [
-  {
-    id: 1,
-    title: "JavaScript Tutorial",
-    badge: "Coding",
-    image:
-      "https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 4300,
-  },
-  {
-    id: 2,
-    title: "Tech Trends 2025",
-    badge: "Tech",
-    image:
-      "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 3200,
-  },
-  {
-    id: 3,
-    title: "The Future of AI",
-    badge: "AI",
-    image:
-      "https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 2400,
-  },
-  {
-    id: 4,
-    title: "React Hooks Explained",
-    badge: "Coding",
-    image:
-      "https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1500,
-  },
-  {
-    id: 5,
-    title: "Image Generation with AI",
-    badge: "AI",
-    image:
-      "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1200,
-  },
-];
-
 const latestTransactions = [
   {
     id: 1,
-    title: "Subscription Renewal",
-    badge: "John Doe",
+    title: " Hot Off the Press! Live Sales Ticker",
+    badge: "Sales",
     image:
-      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1400,
+      "https://images.pexels.com/photos/7947758/pexels-photo-7947758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    count: 7300,
   },
   {
     id: 2,
-    title: "Payment for Services",
-    badge: "Jane Smith",
+    title: "Sponsor/Vendor Announcement Carousels",
+    badge: "Advertising",
     image:
-      "https://images.pexels.com/photos/4969918/pexels-photo-4969918.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 2100,
+      "https://images.pexels.com/photos/7859937/pexels-photo-7859937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    count: 8200,
   },
   {
     id: 3,
-    title: "Subscription Renewal",
-    badge: "Michael Johnson",
+    title: "Limited-Time Transaction Alerts",
+    badge: "Marketing",
     image:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1300,
+      "https://images.pexels.com/photos/8292793/pexels-photo-8292793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    count: 7400,
   },
   {
     id: 4,
-    title: "Payment for Services",
-    badge: "Lily Adams",
+    title: "Milestone Celebrations",
+    badge: "Community",
     image:
-      "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 2500,
+      "https://images.pexels.com/photos/949592/pexels-photo-949592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    count: 9500,
   },
   {
     id: 5,
-    title: "Subscription Renewal",
-    badge: "Sam Brown",
+    title: "Payment Milestones",
+    badge: "Payments",
+    image:
+      "https://images.pexels.com/photos/50987/money-card-business-credit-card-50987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    count: 8200,
+  },
+];
+
+const popularContent  = [
+  {
+    id: 1,
+    title: "Interactive Polls & Quizzes",
+    badge: "khalid",
+    image:
+      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=800",
+    count: 4400,
+  },
+  {
+    id: 2,
+    title: "Sneak Peek Teasers",
+    badge: "Ameera Hamza",
+    image:
+      "https://images.pexels.com/photos/4969918/pexels-photo-4969918.jpeg?auto=compress&cs=tinysrgb&w=800",
+    count: 6100,
+  },
+  {
+    id: 3,
+    title: "Speaker/Performer Highlights",
+    badge: "Kainat Ali",
+    image:
+      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=800",
+    count: 7300,
+  },
+  {
+    id: 4,
+    title: "User-Generated Content (UGC) Campaign",
+    badge: "Sundas Malik",
+    image:
+      "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=800",
+    count: 8500,
+  },
+  {
+    id: 5,
+    title: "Live Behind-the-Scenes Coverage",
+    badge: "Sardar Ali",
     image:
       "https://images.pexels.com/photos/1680175/pexels-photo-1680175.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1400,
+    count: 7400,
   },
 ];
 
