@@ -78,8 +78,8 @@ const AppSidebar = () => {
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <Link href="/">
-                <Image src="/logo.jpg" alt="logo" width={20} height={20} />
-                <span>Event</span>
+                <Image src="/Logo.jpg" className={''} alt="logo" width={20} height={20} />
+                <span>DashWave</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
